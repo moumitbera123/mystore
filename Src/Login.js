@@ -18,8 +18,8 @@ const Login = () => {
   return (
     <View style={styles.container}>
       <View>
-        <Text>Log into</Text>
-        <Text>Your account</Text>
+        <Text style={styles.title}>Log into</Text>
+        <Text style={styles.subtitle}>Your account</Text>
       </View>
 
       <View style={styles.formContainer}>
@@ -36,22 +36,20 @@ const Login = () => {
           <Text style={styles.buttonText}>Log in</Text>
         </TouchableOpacity>
       </View>
-      <View>
-        <Text>Or sign up with</Text>
+    
+      <View style={styles.socialContainer}>
+        <Text style={styles.socialText}>Or sign up with</Text>
+        <View style={styles.iconsContainer}>
+          <Icon name="apple" size={30} color="#000" />
+          <Icon name="google" size={30} color="#000" />
+          <Icon name="facebook" size={30} color="#000" />
+        </View>
       </View>
-      <View>
 
-        <Icon name="apple" size={30} color="#000" />
-
-
-        <Icon name="google" size={30} color="#000" />
-
-        <Icon name="facebook" size={30} color="#000" />
-      </View>
-      <View>
-        <Text>Don't have an account ?</Text>
+      <View style={styles.loginContainer}>
+        <Text style={styles.loginText}>Already have an account?</Text>
         <TouchableOpacity onPress={navigatetosignup}>
-          <Text>Sign up</Text>
+          <Text style={styles.loginLink}>sign up</Text>
         </TouchableOpacity>
       </View>
 
@@ -71,13 +69,13 @@ const styles = StyleSheet.create({
   formContainer: {
     flex: 1,
     justifyContent: 'center',
+    marginTop:20
   },
   input: {
     height: 50,
-    borderColor: 'gray',
     marginBottom: 15,
-    paddingHorizontal: 10,
-    borderRadius: 5,
+    paddingHorizontal: 15,
+    borderRadius: 8,
   },
   button: {
     backgroundColor: '#807574',
@@ -88,7 +86,7 @@ const styles = StyleSheet.create({
     height: 53,
     width: 180,
     marginLeft: 80,
-    marginTop:30
+    marginTop:60
   },
   buttonText: {
     color: '#fff',
@@ -99,5 +97,56 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-around',
     paddingBottom: Platform.OS === 'ios' ? 20 : 10,
+  },
+  title: {
+    fontSize: 25,
+    fontWeight: 'bold',
+    color: '#333',
+    textAlign: 'center',
+    // marginBottom: 10,
+    marginRight:210,
+    marginTop:40,
+
+  },
+  subtitle: {
+    fontSize: 25,
+    fontWeight: 'bold',
+    color: '#333',
+    textAlign: 'center',
+    marginRight:150,
+    marginTop:20
+  },
+  socialContainer: {
+    alignItems: 'center',
+    marginBottom: 70,
+  },
+  socialText: {
+    fontSize: 16,
+    color: '#666',
+    marginBottom: 10,
+  },
+  iconsContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    width: '60%',
+    paddingHorizontal: 20,
+  },
+  loginContainer: {
+    alignItems: 'center',
+    marginBottom: 40,
+    flexDirection:'row',
+    marginLeft:60
+  },
+  loginText: {
+    fontSize: 16,
+    color: '#666',
+   marginTop:4
+  },
+  loginLink: {
+    fontSize: 16,
+    color: '#807574',
+    fontWeight: 'bold',
+    marginTop: 5,
+    marginLeft:10
   },
 })

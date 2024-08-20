@@ -50,7 +50,7 @@ const Stack = createStackNavigator();
 const AppNavigator = () => {
     return (
            <NavigationContainer>
-            <Stack.Navigator initialRouteName='Splash' >
+            <Stack.Navigator initialRouteName='Splash' screenOptions={{headerShown:false}}>
                 <Stack.Screen name='Splash' component={Splash}/>
                 <Stack.Screen name='SignUp' component={SignUp}/>
                 <Stack.Screen name='Login' component={Login}/>

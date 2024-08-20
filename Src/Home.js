@@ -3,9 +3,10 @@ import React from 'react';
 import HomeScreen from './HomeScreen';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { useNavigation } from '@react-navigation/native';
+import BottomTab from './BottomTab';
 
-const Home = () => {
-    const navigation = useNavigation();
+const Home = ({navigation}) => {
+    // const navigation = useNavigation();
 
     return (
         <View style={{ flex: 1 }}>
@@ -16,6 +17,7 @@ const Home = () => {
                 <Icon name="menu-outline" size={28} color="#333" />
             </TouchableOpacity>
             <HomeScreen />
+     
         </View>
     );
 };
