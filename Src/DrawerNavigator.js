@@ -4,7 +4,7 @@ import Home from './Home';
 import Bag from './Bag';
 import Favourites from './Favourites';
 import Profile from './Profile';
-
+import Icon from 'react-native-vector-icons/FontAwesome'
 const Drawer = createDrawerNavigator();
 
 const DrawerNavigator = () => {

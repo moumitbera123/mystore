@@ -1,7 +1,7 @@
 import { FlatList, Image, ImageBackground, Text, TouchableOpacity, View, StyleSheet } from 'react-native';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import MaterialIcon from 'react-native-vector-icons/MaterialIcons'; // Import the icon library
+import MaterialIcon from 'react-native-vector-icons/MaterialIcons'; 
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 const HomeScreen = () => {
