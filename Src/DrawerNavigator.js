@@ -6,16 +6,18 @@ import Favourites from './Favourites';
 import Profile from './Profile';
 import Icon from 'react-native-vector-icons/FontAwesome'
 import BottomTab from './BottomTab';
+import Screen from './Screen';
 const Drawer = createDrawerNavigator();
 
 const DrawerNavigator = () => {
     return (
-        <Drawer.Navigator initialRouteName="Home">
+        <Drawer.Navigator >
+            {/* <Drawer.Screen name='Screen' component={Screen}/>
             <Drawer.Screen name="Home" component={Home} />
             <Drawer.Screen name="Bag" component={Bag} />
             <Drawer.Screen name="Favourites" component={Favourites} />
-            <Drawer.Screen name="Profile" component={Profile} />
-       
+            <Drawer.Screen name="Profile" component={Profile} /> */}
+            <Drawer.Screen name='BottomTab' component={BottomTab} />
         </Drawer.Navigator>
     );
 };

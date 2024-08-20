@@ -11,7 +11,7 @@ const Home = () => {
         <View style={styles.container}>
             <TouchableOpacity
                 style={styles.menuButton}
-                onPress={() => navigation.openDrawer()}
+                onPress={() => navigation.navigate('BottomTab')}
             >
                 <Icon name="menu-outline" size={28} color="#fff" />
             </TouchableOpacity>

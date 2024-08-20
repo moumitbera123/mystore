@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
   subtitle: {
     fontSize: 25,
     fontWeight: 'bold',
-    color: '#666',
+    color: '#333',
     textAlign: 'center',
     marginRight:140,
     marginTop:20
@@ -77,21 +77,23 @@ const styles = StyleSheet.create({
   },
   input: {
     height: 50,
-    // borderColor: '#ccc',
-    // borderWidth: 1,
     marginBottom: 15,
     paddingHorizontal: 15,
-    borderRadius: 8,
-
+    borderBottomWidth: 1, 
+    borderBottomColor: '#ccc', 
+    borderTopWidth: 0, 
+    borderLeftWidth: 0, 
+    borderRightWidth: 0, 
+    borderRadius: 0, 
   },
   button: {
-    backgroundColor: '#807574',
+    backgroundColor: '#454242',
     height: 53,
-    width:150,
+    width:180,
     borderRadius: 25,
     alignItems: 'center',
     justifyContent: 'center',
-   marginLeft:100,
+   marginLeft:80,
    marginTop:30
   },
   buttonText: {

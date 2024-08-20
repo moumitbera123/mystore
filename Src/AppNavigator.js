@@ -57,11 +57,6 @@ const AppNavigator = () => {
                 <Stack.Screen name='ForgotPassword' component={ForgotPassword}/>
                 <Stack.Screen name='HomeScreen' component={HomeScreen}/>
                 <Stack.Screen name='BottomTab' component={BottomTab}/>
-                <Stack.Screen name='Screen' component={Screen}/>
-                <Stack.Screen name='Home' component={Home}/>
-                <Stack.Screen name='Bag' component={Bag}/>
-                <Stack.Screen name='Favourites' component={Favourites}/>
-                <Stack.Screen name='Profile' component={Profile}/>
                 <Stack.Screen name='DrawerNavigator' component={DrawerNavigator}/>
             </Stack.Navigator> 
            </NavigationContainer>
