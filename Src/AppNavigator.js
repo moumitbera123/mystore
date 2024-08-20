@@ -62,7 +62,7 @@ const AppNavigator = () => {
                 <Stack.Screen name='Bag' component={Bag}/>
                 <Stack.Screen name='Favourites' component={Favourites}/>
                 <Stack.Screen name='Profile' component={Profile}/>
-                {/* <Stack.Screen name='Home' component={DrawerNavigator}/> */}
+                <Stack.Screen name='DrawerNavigator' component={DrawerNavigator}/>
             </Stack.Navigator> 
            </NavigationContainer>
     )

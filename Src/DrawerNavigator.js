@@ -5,6 +5,7 @@ import Bag from './Bag';
 import Favourites from './Favourites';
 import Profile from './Profile';
 import Icon from 'react-native-vector-icons/FontAwesome'
+import BottomTab from './BottomTab';
 const Drawer = createDrawerNavigator();
 
 const DrawerNavigator = () => {
@@ -14,6 +15,7 @@ const DrawerNavigator = () => {
             <Drawer.Screen name="Bag" component={Bag} />
             <Drawer.Screen name="Favourites" component={Favourites} />
             <Drawer.Screen name="Profile" component={Profile} />
+       
         </Drawer.Navigator>
     );
 };

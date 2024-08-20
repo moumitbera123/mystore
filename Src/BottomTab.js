@@ -30,9 +30,7 @@ const BottomTab = () => {
             case 'Profile':
               iconName = 'person-outline';
               break;
-            default:
-              iconName = 'home-outline';
-              break;
+      
           }
 
           return <Icon name={iconName} size={size} color={color} />;

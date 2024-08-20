@@ -3,21 +3,19 @@ import React from 'react';
 import HomeScreen from './HomeScreen';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { useNavigation } from '@react-navigation/native';
-import BottomTab from './BottomTab';
 
-const Home = ({navigation}) => {
-    // const navigation = useNavigation();
+const Home = () => {
+    const navigation = useNavigation();
 
     return (
-        <View style={{ flex: 1 }}>
+        <View style={styles.container}>
             <TouchableOpacity
                 style={styles.menuButton}
-                onPress={() => navigation.openDrawer()} // Ensure this is within DrawerNavigator
+                onPress={() => navigation.openDrawer()}
             >
-                <Icon name="menu-outline" size={28} color="#333" />
+                <Icon name="menu-outline" size={28} color="#fff" />
             </TouchableOpacity>
             <HomeScreen />
-     
         </View>
     );
 };
@@ -25,11 +23,17 @@ const Home = ({navigation}) => {
 export default Home;
 
 const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        
+    },
     menuButton: {
         padding: 10,
         position: 'absolute',
         top: 20,
         left: 10,
         zIndex: 1000,
+        backgroundColor: '#333', 
+        borderRadius: 20,
     },
 });
