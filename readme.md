@@ -27,7 +27,7 @@ To run the project locally, clone the repository and install the dependencies:
     "react-native-screens": "^3.34.0",
     "react-native-vector-icons": "^10.1.0"
   },
-git https://github.com/moumitbera123/mystore/new/master
+git [https://github.com/moumitbera123/mystore/new/master](https://github.com/moumitbera123/mystore/tree/master)
 cd mystore.com
 npm install
  
