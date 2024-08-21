@@ -21,9 +21,8 @@
 ## Features
 
 - **Product Browsing:** Explore a wide range of products with detailed descriptions and images.
-- **Shopping Cart:** Add, remove, and manage products in your shopping cart with ease.
+
 - **Secure Checkout:** Complete purchases securely with multiple payment options.
-- **User Authentication:** Secure user registration and login functionalities.
 - **Responsive Design:** Optimized for various devices including desktops and mobile platforms.
 - **API Integration:** Efficient data handling using Axios for API requests.
 
@@ -55,7 +54,10 @@
 ## Installation
 
 Follow these steps to set up the project locally:
-
+Node.js (v18.20.3 or later)
+npm (v10.8.1 or later)
+JDK (v17.0.11.9 or later)
+Choco (v2.3.0 or later)
 ### Prerequisites
 
 Ensure you have the following installed on your system:
