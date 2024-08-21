@@ -10,7 +10,7 @@ const Login = () => {
     navigation.navigate('SignUp')
   }
   const navigatetoHomeScreen =()=>{
-    navigation.navigate('BottomTab')
+    navigation.navigate('DrawerNavigator')
   }
   const navigatetoforgotpassword = () =>{
     navigation.navigate('ForgotPassword')
