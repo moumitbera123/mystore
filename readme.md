@@ -13,10 +13,7 @@
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+
 
 ## Features
 
@@ -54,10 +51,10 @@
 ## Installation
 
 Follow these steps to set up the project locally:
-Node.js (v18.20.3 or later)
-npm (v10.8.1 or later)
-JDK (v17.0.11.9 or later)
-Choco (v2.3.0 or later)
+- Node.js (v18.20.3 or later)
+- npm (v10.8.1 or later)
+- JDK (v17.0.11.9 or later)
+- Choco (v2.3.0 or later)
 ### Prerequisites
 
 Ensure you have the following installed on your system:
