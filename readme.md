@@ -6,7 +6,7 @@
 
 ## Overview
 
-**mystore.com** is a comprehensive e-commerce platform that allows users to seamlessly browse products, add items to their cart, and complete purchases. This project is designed for businesses aiming to establish a robust online presence and provide customers with an intuitive and efficient shopping experience.
+**mystore.com** is a comprehensive e-commerce platform that allows users to seamlessly browse products. This project is designed for businesses aiming to establish a robust online presence and provide customers with an intuitive and efficient shopping experience.
 
 ## Table of Contents
 
