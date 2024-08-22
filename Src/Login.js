@@ -18,7 +18,7 @@ const Login = () => {
   return (
     <View style={styles.container}>
       <View>
-        <Text style={styles.title}>Log into</Text>
+        <Text style={styles.title}>Log int</Text>
         <Text style={styles.subtitle}>Your account</Text>
       </View>
 
