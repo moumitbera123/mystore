@@ -1,79 +1,215 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# mystore.com
 
-# Getting Started
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Node.js Version](https://img.shields.io/badge/node.js-18.20.3-brightgreen)](https://nodejs.org/)
+[![npm Version](https://img.shields.io/badge/npm-10.8.1-red)](https://www.npmjs.com/)
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Overview
 
-## Step 1: Start the Metro Server
+**mystore.com** is a comprehensive e-commerce platform that allows users to seamlessly browse products. This project is designed for businesses aiming to establish a robust online presence and provide customers with an intuitive and efficient shopping experience.
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+## Table of Contents
 
-To start Metro, run the following command from the _root_ of your React Native project:
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
 
-```bash
-# using npm
-npm start
+## Features
 
-# OR using Yarn
-yarn start
-```
+- **Product Browsing:** Explore a wide range of products with detailed descriptions and images.
+- **Secure Checkout:** Complete purchases securely with multiple payment options.
+- **Responsive Design:** Optimized for various devices including desktops and mobile platforms.
+- **API Integration:** Efficient data handling using Axios for API requests.
 
-## Step 2: Start your Application
+## Technologies Used
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+- **Runtime Environment:**
+  - [Node.js](https://nodejs.org/en/): 18.20.3
+- **Package Manager:**
+  - [npm](https://www.npmjs.com/): 10.8.1
+- **Java Development Kit:**
+  - JDK 17.0.11.9
+- **Package Management:**
+  - [Chocolatey](https://chocolatey.org/): v2.3.0
+- **Frontend Frameworks and Libraries:**
+  - [React](https://reactjs.org/): 18.3.1
+  - [React Native](https://reactnative.dev/): 0.75.1
+  - [React Navigation](https://reactnavigation.org/): 
+    - bottom-tabs: ^6.6.1
+    - drawer: ^6.7.2
+    - native: ^6.1.17
+    - stack: ^6.3.29
+  - [Axios](https://axios-http.com/): ^1.7.4
+  - [React Native Gesture Handler](https://docs.swmansion.com/react-native-gesture-handler/): ^2.18.1
+  - [React Native Reanimated](https://docs.swmansion.com/react-native-reanimated/): ^3.15.0
+  - [React Native Safe Area Context](https://github.com/th3rdwave/react-native-safe-area-context): ^4.10.1
+  - [React Native Screens](https://github.com/software-mansion/react-native-screens): ^3.34.0
+  - [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons): ^10.1.0
 
-### For Android
+## Installation
 
-```bash
-# using npm
-npm run android
+Follow these steps to set up the project locally:
 
-# OR using Yarn
-yarn android
-```
+### Prerequisites
 
-### For iOS
+Ensure you have the following installed on your system:
 
-```bash
-# using npm
-npm run ios
+- [Node.js](https://nodejs.org/en/download/) (v18.20.3 or later)
+- [npm](https://www.npmjs.com/get-npm) (v10.8.1 or later)
+- [JDK](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html) (v17.0.11.9 or later)
+- [Chocolatey](https://chocolatey.org/install) (v2.3.0 or later)
+- [Git](https://git-scm.com/downloads) (Latest version)
 
-# OR using Yarn
-yarn ios
-```
+### Environment Setup
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+#### 1. Install Node.js and npm
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+- **Windows/MacOS/Linux:**
+  - Download and install Node.js from the [official website](https://nodejs.org/en/download/).
+  - Verify the installation:
+  
+    ```bash
+    node -v
+    npm -v
+    ```
+  - This should output the versions of Node.js and npm installed on your system.
 
-## Step 3: Modifying your App
+#### 2. Install JDK
 
-Now that you have successfully run the app, let's modify it.
+- **Windows:**
+  - Download and install JDK 17 from the [Oracle website](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html).
+  - After installation, set the `JAVA_HOME` environment variable:
+  
+    ```bash
+    setx JAVA_HOME "C:\Program Files\Java\jdk-17.x.x"
+    setx PATH "%JAVA_HOME%\bin;%PATH%"
+    ```
+  
+  - Verify the installation:
+  
+    ```bash
+    java -version
+    ```
+  
+  - This should output the version of Java installed.
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+- **MacOS/Linux:**
+  - Install JDK via a package manager like Homebrew (MacOS) or apt (Linux), or download from Oracle.
+  - Verify the installation:
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+    ```bash
+    java -version
+    ```
 
-## Congratulations! :tada:
+#### 3. Install Chocolatey (Windows Only)
 
-You've successfully run and modified your React Native App. :partying_face:
+- **Windows:**
+  - Open a PowerShell terminal with administrator privileges.
+  - Run the following command to install Chocolatey:
 
-### Now what?
+    ```bash
+    Set-ExecutionPolicy Bypass -Scope Process -Force; `
+    [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol `
+    -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+    ```
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+  - Verify the installation:
 
-# Troubleshooting
+    ```bash
+    choco -v
+    ```
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+#### 4. Install Git
 
-# Learn More
+- **Windows/MacOS/Linux:**
+  - Download and install Git from the [official website](https://git-scm.com/downloads).
+  - Verify the installation:
 
-To learn more about React Native, take a look at the following resources:
+    ```bash
+    git --version
+    ```
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+### Steps
+
+1. **Clone the Repository**
+
+   - Open a terminal and run the following command to clone the project repository:
+
+     ```bash
+     git clone https://github.com/moumitbera123/mystore.git
+     cd mystore
+     ```
+
+2. **Install Project Dependencies**
+
+   - Run the following command to install all necessary npm packages:
+
+     ```bash
+     npm install
+     ```
+
+   - This will download and install all dependencies listed in the `package.json` file.
+
+3. **Setup Android Environment**
+
+   - **Android Studio Setup:**
+     - Download and install Android Studio from [here](https://developer.android.com/studio).
+     - Open Android Studio and install necessary SDKs and tools.
+     - Configure your system's PATH environment variable to include the Android SDK tools.
+  
+   - **Set Up Environment Variables (Windows):**
+  
+     ```bash
+     setx ANDROID_HOME "C:\Users\<Your-Username>\AppData\Local\Android\Sdk"
+     setx PATH "%ANDROID_HOME%\tools;%ANDROID_HOME%\platform-tools;%PATH%"
+     ```
+
+   - **macOS/Linux:**
+     - Similar setup steps as Windows, but the Android SDK path might differ.
+     - For example:
+
+       ```bash
+       export ANDROID_HOME=$HOME/Library/Android/sdk
+       export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
+       ```
+
+4. **Run the Project**
+
+   - **Start the Metro Bundler:**
+
+     ```bash
+     npm start
+     ```
+
+   - **Build and Run the Android App:**
+
+     - Ensure you have an Android emulator running or a physical device connected, then execute:
+
+       ```bash
+       npm run android
+       ```
+
+   - **Optional: Build and Run the iOS App (macOS Only):**
+
+     ```bash
+     npx react-native run-ios
+     ```
+
+     **Note:** You need Xcode installed to run the iOS version.
+
+5. **Troubleshooting**
+
+   - **Metro Bundler Issues:**
+     - Make sure no other instance of Metro Bundler is running. You can terminate it by using `Ctrl + C` in the terminal where it's running.
+
+   - **Build Failures:**
+     - Ensure all dependencies and environment variables are correctly set up. For Android, make sure the SDK path is correct and the necessary SDK components are installed.
+
+   - **Dependency Issues:**
+     - If you encounter problems with installed dependencies, try removing the `node_modules` folder and `package-lock.json` file, then reinstalling the dependencies:
+
+       ```bash
+       rm -rf node_modules package-lock.json
+       npm install
+       ```
+
